@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="App.css">
+  <link rel="stylesheet" href="../App.css">
+
+  <title>UploadYP</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="navbar-brand">Navbar</div>
+  </nav>
+  <div class="container-fluid">
+    <div class="row">
+    <div class="col-12" style="background-color: var(--field-background)">
+      <h1>Profil hochladen</h1>
+      <a href="homepage.html" class="close"></a>
+      <div class="row"></div>
+    </div>
+      <div class="col-md-4">
+        <p>Willst du von Experten entdeckt werden?
+          <br>
+         Hier kannst du ganz einfach dein Profil erstellen und dein Portfolio hochladen.
+        </p>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" id="name" onchange="setName(event)">
+        </div>
+        <div class="form-group">
+          <label for="firstname">Vorname</label>
+          <input type="text" class="form-control" id="firstname" onchange="setFirstname(event)">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" id="email" onchange="setEmail(event)">
+        </div>
+        <button onclick="addUser()" class="btn btn-primary">Hochladen</button>
+      </div>
+<!--      Drag and Drop-->
+      <div class="col-md-8">
+        <div class="dropArea">
+          <i class="fas fa-upload"></i>
+          <h2>Upload</h2>
+        </div>
+        <div class="file-upload-wrapper">
+          <input type="file" id="input-file-now" class="file-upload"/>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.16.6/dist/umd/popper.min.js" integrity="sha384-iuLq3mhVjrv6rWnV8H2iukjRV7EZ9XkZ"></script>
+
+    
+  </body>
+</html>
+
