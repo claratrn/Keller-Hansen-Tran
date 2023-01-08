@@ -8,6 +8,15 @@
     <title>So geht's</title>
   </head>
   <body>
+  <header>
+      <div id="header-container"></div>
+      <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+      <script>
+          $(document).ready(function() {
+              $("#header-container").load("header.html");
+          });
+      </script>
+  </header>
       <p>Wilkommen!</p>
       <p>Du kennst <a href="https://easystep.ch/">Easystep</a> und wünschst dir noch persönliche Hilfe? Dann helfen wir dir gerne weiter! </p>
       <br/>
