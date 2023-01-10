@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,33 +12,34 @@
 
 </head>
 <body> <!-- Navbar -->
-<div class="container-fluid" style="background-color: var(--blue)">
-    <div class="row"  >
-        <div class="col-12 d-flex justify-content-between">
-                <!--Sidebar Navigation-->
-                <div id="mySidenav" class="sidenav">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                    <a href="anliegen.html">Dein Anliegen</a>
-                    <a href="upload.html">Profil hochladen</a>
-                    <a href="about.html">About</a>
-                    <a href="https://easystep.ch/">Easystep</a>
-                    <a href="homepage.html">Home</a>
-                </div>
-                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-                <script>
-                    function openNav() {
-                        document.getElementById("mySidenav").style.width = "250px";
-                    }
+<div class="container-fluid align-items-center" style="background-color: var(--blue)">
+    <div class="row">
+        <div class="col-12 d-flex">
+            <!--Sidebar Navigation-->
+            <div id="mySidenav" class="sidenav sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="anliegen.html">Dein Anliegen</a>
+                <a href="upload.html">Profil hochladen</a>
+                <a href="about.html">About</a>
+                <a href="https://easystep.ch/">Easystep</a>
+                <a href="homepage.html">Home</a>
+            </div>
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+            <script>
+                function openNav() {
+                    document.getElementById("mySidenav").style.width = "250px";
+                }
 
-                    function closeNav() {
-                        document.getElementById("mySidenav").style.width = "0";
-                    }
-                </script>
+                function closeNav() {
+                    document.getElementById("mySidenav").style.width = "0";
+                }
+            </script>
             <!--/. Sidebar navigation -->
+            <a href="homepage.html"><h1 class="heading-1">Easystep Connect</h1></a>
 
-                <h1>Easystep Connect</h1>
         </div>
-    </div>
+            </div>
+</div>
 </div>
 </body>
 </html>
