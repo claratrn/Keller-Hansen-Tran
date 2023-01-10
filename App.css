@@ -3,27 +3,28 @@
  */
 :root {
     font-family: 'Inter', sans-serif;
-    --banner-background: #83D4F9;
-    --button-background: #F9EC61;
+    --blue: #83D4F9;
+    --yellow: #F9EC61;
     --receiver-chat-background: #C0E9FC;
     --field-background: #EEEEEE;
     --prompt-text: #ADABAB;
 
 }
-
 /*Heading*/
 
 .col-12{
-    background-color: var(--banner-background);
 }
-.row{
-    color:black;
+.row {
+    display: flex;
+    justify-content: center;
+}
+.d-flex{
+    width: 80%;
+    margin:0 auto;
 }
 
 .col-12 h1 {
-
 }
-
 .header:visited {
     text-decoration: none;
     color: black;
@@ -62,25 +63,35 @@ p {
     height: auto;
 }
 
-.tiles {
-    /*background-color: red;*/
-    display: flex; /* Set tiles container to be a flex container */
-    margin-top: 15px;
-
+.card{
+    width: 220px;
+    height: 220px;
+    background-color: yellow;
+    min-width: 220px;
+}
+.card-title + hr{
+    color: black;
+    margin-top:5px;
+    margin-bottom:5px;
+}
+.card-footer{
+    color: black;
+}
+a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+a:link, a:active {
+    text-decoration: none;
+    color: black;
 }
 
-.tile {
-    margin-left: 100px;
-    flex: 0 0 200px; /* Set fixed width and height for tiles */
-    background-color: var(--button-background);
-    text-align: center;
-
+.icon-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
-.tile h2{
-    vertical-align: middle;
-    line-height:280px;
-}
-
 /*Sidebar*/
 .sidenav {
     height: 100%;
@@ -352,12 +363,12 @@ Dropbox NEW
 
 .dropArea i {
     font-size: 3em;
-    color: var(--banner-background);
+    color: var(--yellow);
 }
 
 .dropArea h2 {
     margin-top: 10px;
-    color: var(--banner-background);
+    color: var(--yellow);
 
 }
 .file-upload-wrapper{
