@@ -17,6 +17,12 @@
     font-size: 30px;
     line-height: 60px;
 }
+/*burgermenu*/
+.col-12 span{
+    line-height: 60px;
+    font-size:30px;
+    cursor:pointer;
+}
 
 .heading-2 {
     margin-left: 50px;
