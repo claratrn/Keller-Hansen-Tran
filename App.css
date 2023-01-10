@@ -3,35 +3,26 @@
  */
 :root {
     font-family: 'Inter', sans-serif;
-    --banner-background: #83D4F9;
-    --button-background: #F9EC61;
-    --receiver-chat-background: #C0E9FC;
+    --blue: #83D4F9;
+    --yellow: #F9EC61;
+    --light-blue: #C0E9FC;
     --field-background: #EEEEEE;
-    --prompt-text: #ADABAB;
+    --grey: #ADABAB;
 
 }
 
 /*Heading*/
 
-.col-12{
-    background-color: var(--banner-background);
-}
-.row{
-    color:black;
-}
-
 .col-12 h1 {
-
+    font-size: 30px;
+    line-height: 60px;
 }
 
-.header:visited {
-    text-decoration: none;
-    color: black;
+.heading-2 {
+    margin-left: 50px;
 }
-
-.header:link {
-    text-decoration: none;
-    color: black;
+.heading-1{
+    margin-left: 23.05px;
 }
 
 button {
@@ -62,23 +53,38 @@ p {
     height: auto;
 }
 
-.tiles {
-    /*background-color: red;*/
-    display: flex; /* Set tiles container to be a flex container */
-    margin-top: 15px;
-
+.card {
+    width: 220px;
+    height: 220px;
+    background-color: yellow;
+    min-width: 220px;
 }
 
-.tile {
-    margin-left: 100px;
-    flex: 0 0 200px; /* Set fixed width and height for tiles */
-    background-color: var(--button-background);
-    text-align: center;
-
+.card-title + hr {
+    color: black;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
-.tile h2{
-    vertical-align: middle;
-    line-height:280px;
+
+.card-footer {
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+a:link, a:active {
+    text-decoration: none;
+    color: black;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /*Sidebar*/
@@ -116,24 +122,25 @@ p {
     margin-left: 50px;
 }
 
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
+.closebtn {
+    color: var(--grey);
+    position: absolute;
+    right: 0;
+    font-size: 50px;
+
 }
 
-.tile-blue {
-    cursor: pointer;
-    width: 25%;
-    height: 250px;
-    padding: 10px;
-    background: #83D4F9;
-    color: #000000;
-    font-size: 30px;
-    font-family: Inter, sans-serif;
-    text-align: left;
-    border-radius: 4px;
-    margin: 30px;
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
 }
+
 
 .tile:hover {
     text-shadow: 2px 2px 4px darkgrey;
@@ -162,13 +169,6 @@ p {
 
 /* kein plan was vo dem brucht wird und was ned ===================*/
 
-.current-Page {
-    height: 80px;
-    width: auto;
-    background-color: lightgray;
-    padding: 5px;
-
-}
 
 .close {
     right: 32px;
@@ -279,11 +279,13 @@ Request
     text-align: left;
     margin-bottom: 8px;
 }
+
 .form input,
 .form textarea {
     width: 50%; /* Makes the input and textarea fields take up half of the width of their parent container */
     margin: 0 auto; /* Centers the input and textarea fields horizontally */
 }
+
 .form h3 {
     color: #83D4F9;
     margin: 5px 455px 0px 0px;
@@ -292,31 +294,6 @@ Request
 .form button {
     margin-top: 20px;
 }
-
-/*.input-box-request {*/
-/*    resize: none;*/
-/*    width: 585px;*/
-/*    font: icon;*/
-/*    font-size: 16px;*/
-/*    background-color: #f1f1f1;*/
-/*    box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.25);*/
-/*    border: #666666;*/
-/*    padding: 10px;*/
-/*}*/
-
-/*.input-box-email {*/
-/*    display: block;*/
-/*    width: 80%;*/
-/*    height: 60px;*/
-/*    font: icon;*/
-/*    font-size: 16px;*/
-/*    background-color: #f1f1f1;*/
-/*    box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.25);*/
-/*    border: #666666;*/
-/*    padding-left: 10px;*/
-/*    padding-right: 10px;*/
-/*    margin: 5px 20px 5px 20px;*/
-/*}*/
 
 /**
 Homepage
@@ -331,15 +308,6 @@ Homepage
 }
 
 
-/**
-Dropbox NEW
- */
-/*.col-md-4{*/
-/*    background-color: red;*/
-/*}*/
-/*.col-md-8{*/
-/*    background-color: #F9EC61;*/
-/*}*/
 .dropArea {
     cursor: pointer;
     border: 2px dashed #ccc;
@@ -352,17 +320,19 @@ Dropbox NEW
 
 .dropArea i {
     font-size: 3em;
-    color: var(--banner-background);
+    color: var(--blue);
 }
 
 .dropArea h2 {
     margin-top: 10px;
-    color: var(--banner-background);
+    color: var(--blue);
 
 }
-.file-upload-wrapper{
+
+.file-upload-wrapper {
     margin-left: 20px;
 }
+
 /**
 About
  */
