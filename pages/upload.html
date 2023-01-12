@@ -67,11 +67,13 @@
 
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control" id="email" placeholder="Email*" required>
+                    <input type="email" class="form-control" id="email" placeholder="Email*" required>
                     <label for="email">Email*</label>
 
                 </div>
-                <button onclick="addUser()" class="btn btn-primary">Hochladen</button>
+                <div class="text-center">
+                    <button class="main-button" onclick="addUser()">Hochladen</button>
+                </div>
             </div>
             <!--      Drag and Drop-->
             <div class="col-md-8">
@@ -86,6 +88,9 @@
                     <input type="file" id="input-file-now" class="file-upload"/>
                 </div>
             </div>
+        </div>
+        <div class="responsive-button">
+            <button class="responsive-button" onclick="addUser()">Hochladen</button>
         </div>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
                 integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

@@ -11,6 +11,25 @@
 
 }
 
+.main-button, .responsive-button {
+    position: relative;
+    width: 130px;
+    height: 40px;
+    background-color: var(--yellow);
+    color: black;
+    border: solid 1px black;
+    border-radius: 3px;
+    font-weight: normal;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+    margin-bottom: 15px;
+}
+
+.main-button:hover, .responsive-button:hover {
+    box-shadow: 2px 2px 3px #333;
+    font-weight: bold;
+}
+
 /*Heading*/
 
 .col-12 h1 {
@@ -18,7 +37,6 @@
     line-height: 60px;
 }
 
-/*burgermenu*/
 .col-12 span {
     line-height: 60px;
     font-size: 30px;
@@ -33,18 +51,6 @@
     margin-left: 23.05px;
 }
 
-button {
-    width: 130px;
-    height: 40px;
-    background-color: #F9EC61;
-    text-align: center;
-    font: icon;
-    margin-top: 15px;
-}
-
-button:hover {
-    box-shadow: 0 5px lightgrey;
-}
 
 .center {
     display: flex;
@@ -212,11 +218,6 @@ a:link, a:active {
 
 /*Form*/
 
-.form-group{
-    height: 60px;
-
-}
-
 input:hover::placeholder,
 input:focus::placeholder {
     position: absolute;
@@ -231,20 +232,56 @@ input:focus::placeholder {
     top: -70px;
 }
 
-.form-control:hover ~ label,
-.form-control:focus ~ label,
-.form-group input:not(:invalid) + label {
-    opacity: 1;
-
-
-}
+.form-control:hover ~ label + label[for=email],
+.form-control:focus ~ label + label[for=email],
+.form-group input:not(:invalid) + label,
 .form-group label.active {
     opacity: 1;
 }
 
+.responsive-button {
+    display: none;
+}
 
+@media (max-width: 767px) {
+    .responsive-button {
+        display: block;
+        position: relative;
+        pointer-events: all;
+    }
 
-/*Form END*/
+    .main-button {
+        display: none;
+    }
+}
+/*Form ------------------END*/
+
+/*Drag AND DROP*/
+
+.dropArea {
+    cursor: pointer;
+    border: 4px dashed var(--blue);
+    border-radius: 5px;
+    text-align: center;
+    padding: 60px 0;
+    margin: 0px;
+}
+.dropArea:hover{
+    background-color: rgb(131,212,249,0.5);
+}
+
+.dropArea h2 {
+    margin-top: 10px;
+    color: var(--blue);
+    font-weight: bold;
+}
+
+.file-upload-wrapper {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*Drag AND DROP -----------END*/
 
 /**
 Request
@@ -286,27 +323,6 @@ Homepage
     flex-direction: row;
     flex-grow: 1;
     justify-content: start;
-}
-
-
-.dropArea {
-    cursor: pointer;
-    border: 4px dashed var(--blue);
-    border-radius: 5px;
-    text-align: center;
-    padding: 60px 0;
-    margin: 20px;
-}
-
-.dropArea h2 {
-    margin-top: 10px;
-    color: var(--blue);
-    font-weight: bold;
-
-}
-
-.file-upload-wrapper {
-    margin-left: 20px;
 }
 
 /**
