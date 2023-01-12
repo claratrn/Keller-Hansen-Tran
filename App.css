@@ -316,22 +316,17 @@ Homepage
 
 .dropArea {
     cursor: pointer;
-    border: 2px dashed #ccc;
+    border: 4px dashed var(--blue);
     border-radius: 5px;
     text-align: center;
     padding: 60px 0;
     margin: 20px;
-
-}
-
-.dropArea i {
-    font-size: 3em;
-    color: var(--blue);
-}
+    }
 
 .dropArea h2 {
     margin-top: 10px;
     color: var(--blue);
+    font-weight: bold;
 
 }
 
