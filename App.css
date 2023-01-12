@@ -44,33 +44,46 @@
 }
 
 .heading-2 {
-    margin-left: 50px;
+    /*50px*/
+    margin-left: 3.125rem;
 }
 
 .heading-1 {
-    margin-left: 23.05px;
+    /*23.05px*/
+    margin-left: 1.441rem;
 }
 
+/*Homepage*/
 
-.center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.homepage {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
-
-p {
-    font-family: Inter, sans-serif;
+@media (max-width: 767px) {
+    .homepage{
+        margin: initial;
+        position: initial;
+        top: initial;
+        left: initial;
+        transform: initial;
+    }
+    .row{
+        margin-top: 3rem;
+    }
 }
-
-.img-fluid {
-    max-width: 100%;
-    height: auto;
+.my-card {
+    width: 400px;
+    height: 500px;
+    font-size: 120%;
 }
 
 .card {
     width: 220px;
     height: 220px;
-    background-color: yellow;
+    background-color: var(--yellow);
     min-width: 220px;
 }
 
@@ -84,21 +97,20 @@ p {
     color: black;
 }
 
-a {
+a, a:hover {
     text-decoration: none;
     color: black;
     cursor: pointer;
-}
-
-a:link, a:active {
-    text-decoration: none;
-    color: black;
 }
 
 .icon-container {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.ml-6 {
+    margin-left: 3.125rem;
 }
 
 /*Sidebar*/
@@ -155,31 +167,6 @@ a:link, a:active {
     }
 }
 
-
-.tile:hover {
-    text-shadow: 2px 2px 4px darkgrey;
-    box-shadow: 10px 10px 5px black;
-}
-
-.tile-blue:hover {
-    text-shadow: 2px 2px 4px darkgrey;
-    box-shadow: 10px 10px 5px black;
-}
-
-.tile-line {
-    background: black;
-    color: black;
-    height: 4px;
-    border: none;
-}
-
-.tile-line:hover {
-    box-shadow: 2px 2px 4px darkgrey;
-}
-
-.big-icon {
-    font-size: 180px;
-}
 
 /* kein plan was vo dem brucht wird und was ned ===================*/
 
@@ -254,6 +241,7 @@ input:focus::placeholder {
         display: none;
     }
 }
+
 /*Form ------------------END*/
 
 /*Drag AND DROP*/
@@ -266,8 +254,9 @@ input:focus::placeholder {
     padding: 60px 0;
     margin: 0px;
 }
-.dropArea:hover{
-    background-color: rgb(131,212,249,0.5);
+
+.dropArea:hover {
+    background-color: rgb(131, 212, 249, 0.5);
 }
 
 .dropArea h2 {
@@ -313,17 +302,6 @@ Request
     margin-top: 20px;
 }
 
-/**
-Homepage
- */
-.flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    background: white;
-    flex-direction: row;
-    flex-grow: 1;
-    justify-content: start;
-}
 
 /**
 About
