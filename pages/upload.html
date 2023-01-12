@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="App.css">
     <link rel="stylesheet" href="../App.css">
     <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
-        <title>UploadYP</title>
+    <title>UploadYP</title>
 </head>
 <body>
 <header>
@@ -50,7 +50,7 @@
                 <a href="homepage.html" class="closebtn" onclick="closeNav()">&times;</a>
                 <div class="row"></div>
             </div>
-            <div class="col-12 pt-3 ">
+            <div class="col-12 pt-3 pb-4">
                 <p>Willst du von Experten entdeckt werden?
                     <br>
                     Hier kannst du ganz einfach dein Profil erstellen und dein Portfolio hochladen.
@@ -58,16 +58,18 @@
             </div>
             <div class="col-md-4">
                 <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" class="form-control" id="name" onchange="setName(event)">
+                    <input type="text" class="form-control" id="name" placeholder="Name*" required>
+                    <label for="name">Name*</label>
                 </div>
                 <div class="form-group">
-                    <label for="firstname">Vorname</label>
-                    <input type="text" class="form-control" id="firstname" onchange="setFirstname(event)">
+                    <input type="text" class="form-control" id="firstname" placeholder="Vorname*" required>
+                    <label for="firstname">Vorname*</label>
+
                 </div>
                 <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" class="form-control" id="email" onchange="setEmail(event)">
+                    <input type="text" class="form-control" id="email" placeholder="Email*" required>
+                    <label for="email">Email*</label>
+
                 </div>
                 <button onclick="addUser()" class="btn btn-primary">Hochladen</button>
             </div>
@@ -75,7 +77,8 @@
             <div class="col-md-8">
                 <div class="dropArea">
                     <div class="icon-container">
-                        <iconify-icon icon="ion:cloud-upload-outline" style="color: var(--blue); font-size: 100px"></iconify-icon>
+                        <iconify-icon icon="ion:cloud-upload-outline"
+                                      style="color: var(--blue); font-size: 100px"></iconify-icon>
                     </div>
                     <h2>Drag & Drop</h2>
                 </div>

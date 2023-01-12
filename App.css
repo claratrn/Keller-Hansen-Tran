@@ -17,17 +17,19 @@
     font-size: 30px;
     line-height: 60px;
 }
+
 /*burgermenu*/
-.col-12 span{
+.col-12 span {
     line-height: 60px;
-    font-size:30px;
-    cursor:pointer;
+    font-size: 30px;
+    cursor: pointer;
 }
 
 .heading-2 {
     margin-left: 50px;
 }
-.heading-1{
+
+.heading-1 {
     margin-left: 23.05px;
 }
 
@@ -207,69 +209,42 @@ a:link, a:active {
 
 
 /* UPLOAD PAGE ===================*/
-.Upload-Container {
-    background-color: white;
-    height: auto;
-}
 
-/*row*/
-.Upload-Container-grid {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    height: 100%;
-}
+/*Form*/
 
-/*column*/
-.Upload-Container-column1 {
-    margin-left: 100px;
-    border: black;
-    height: auto;
-}
-
-.Upload-Container-column1 label {
-    padding-left: 10px;
-}
-
-.Upload-Container-column2 {
-    margin-right: 100px;
-    padding: 16px;
-    border: black;
-    height: auto;
-    background-color: white;
+.form-group{
+    height: 60px;
 
 }
 
-.Input-box {
-    width: 50%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
+input:hover::placeholder,
+input:focus::placeholder {
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+}
+
+.form-group label {
+    opacity: 0;
+    transition: opacity 0.5s;
+    position: relative;
+    top: -70px;
+}
+
+.form-control:hover ~ label,
+.form-control:focus ~ label,
+.form-group input:not(:invalid) + label {
+    opacity: 1;
+
+
+}
+.form-group label.active {
+    opacity: 1;
 }
 
 
-.btn-menu {
-    float: left;
-    height: 50px;
-    width: 50px;
-    margin-right: 20px;
-    margin-left: 5px;
-    margin-top: 12px;
-    border-radius: 50%;
-    background-color: #83D4F9;
-}
 
-.btn-menu:hover {
-    background-color: #a7e0fb
-}
-
-.btn-menu:active {
-    background-color: #a7e0fb;
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
-}
+/*Form END*/
 
 /**
 Request
@@ -321,7 +296,7 @@ Homepage
     text-align: center;
     padding: 60px 0;
     margin: 20px;
-    }
+}
 
 .dropArea h2 {
     margin-top: 10px;
