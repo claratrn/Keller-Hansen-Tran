@@ -2,7 +2,7 @@
  * Variables
  */
 :root {
-    font-family: 'Inter', 'Roboto Light', sans-serif;
+    font-family: 'Nunito', sans-serif;
     --blue: #83D4F9;
     --yellow: #F9EC61;
     --light-blue: #C0E9FC;
@@ -10,11 +10,11 @@
     --grey: #ADABAB;
 
 }
-
-p {
-    font-size: 24px;
-
+p{
+    font-size : 24px;
 }
+
+
 .main-button, .responsive-button {
     font-size: 18px;
     position: relative;
@@ -45,7 +45,6 @@ p {
 
 .col-12 span {
     line-height: 60px;
-    font-size: 30px;
     cursor: pointer;
 }
 
@@ -57,6 +56,7 @@ p {
 .heading-1 {
     /*23.05px*/
     margin-left: 1.441rem;
+
 }
 
 
@@ -101,8 +101,7 @@ iconify-icon{
 
 .card footer{
     text-align: right;
-    marging-bottom:5px;
-    padding-right: 1.5rem;"
+    padding-right: 1.5rem;
 }
 @media screen and (max-width: 576px) {
     .card {
@@ -121,6 +120,30 @@ iconify-icon{
     iconify-icon {
         font-size: 100px;
     }
+}
+/*for Extra large devices*/
+@media screen and (min-width: 1700px) {
+    .card {
+        height: 350px;
+        width: 350px;
+
+    }
+
+    .card-title {
+        font-size: 26px;
+    }
+
+    .icon-container {
+        height: 23vh;
+    }
+    iconify-icon {
+        font-size: 170px;
+    }
+    .card footer{
+        margin-bottom: 1rem;
+
+    }
+
 }
 
 /*HOMEPAGE====================END*/
@@ -167,8 +190,6 @@ iconify-icon{
     font-size: 50px;
 
 }
-
-
 @media screen and (max-height: 450px) {
     .sidenav {
         padding-top: 15px;
@@ -178,7 +199,6 @@ iconify-icon{
         font-size: 18px;
     }
 }
-
 
 /* kein plan was vo dem brucht wird und was ned ===================*/
 .close {
@@ -202,15 +222,6 @@ iconify-icon{
     background-color: #333;
 }
 
-.close:before {
-    transform: rotate(45deg);
-}
-
-.close:after {
-    transform: rotate(-45deg);
-}
-
-
 /* UPLOAD PAGE ===================*/
 /*Form*/
 input:hover::placeholder,
@@ -219,7 +230,11 @@ input:focus::placeholder {
     bottom: -20px;
     left: 0;
 }
-
+.form-group input{
+    background: #EEEEEE;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
 .form-group label {
     opacity: 0;
     transition: opacity 0.5s;
@@ -230,9 +245,11 @@ input:focus::placeholder {
 .form-control:hover ~ label + label[for=email],
 .form-control:focus ~ label + label[for=email],
 .form-group input:not(:invalid) + label,
-.form-group label.active {
+.form-group label.active,
+.form-group input:hover + label{
     opacity: 1;
 }
+
 
 .responsive-button {
     display: none;
@@ -306,12 +323,21 @@ Request
 .form button {
     margin-top: 20px;
 }
-
+.request-area{
+    width: 799px;
+    height: 212px;
+    background: #EEEEEE;
+    border: 1px solid #000000;
+    box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    font-size: 2rem;
+    padding: 1rem;
+}
+.request-area::placeholder{
+    font-size: 2rem;
+}
 
 
 /* ABOUT PAGE ===================*/
 
-.tutorial-container{
-
-}
 
