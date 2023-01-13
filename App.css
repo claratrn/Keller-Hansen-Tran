@@ -2,7 +2,7 @@
  * Variables
  */
 :root {
-    font-family: 'Inter','Roboto Light', sans-serif;
+    font-family: 'Inter', 'Roboto Light', sans-serif;
     --blue: #83D4F9;
     --yellow: #F9EC61;
     --light-blue: #C0E9FC;
@@ -11,23 +11,29 @@
 
 }
 
+p {
+    font-size: 24px;
+
+}
 .main-button, .responsive-button {
+    font-size: 18px;
     position: relative;
-    width: 130px;
-    height: 40px;
+    width: 198px;
+    height: 45px;
     background-color: var(--yellow);
     color: black;
     border: solid 1px black;
     border-radius: 3px;
-    font-weight: normal;
     text-align: center;
     transition: all 0.2s ease-in-out;
     margin-bottom: 15px;
 }
 
 .main-button:hover, .responsive-button:hover {
-    box-shadow: 2px 2px 3px #333;
-    font-weight: bold;
+    background: rgba(248, 231, 58, 0.8);
+    border: 1px solid #000000;
+    box-shadow: -10px 10px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
 }
 
 /*Heading*/
@@ -53,34 +59,22 @@
     margin-left: 1.441rem;
 }
 
-/*Homepage*/
-@media screen and (min-width: 935px) {
-    .d-inline-flex {
-        justify-content: space-between;
-        gap: 20px;
-    }
-}
 
-@media screen and (max-width: 934px) {
-    .d-inline-flex {
-        justify-content: center;
-    }
+a, a:hover {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
 }
-
-@media screen and (max-width: 576px) {
-    .d-flex {
-        margin-top: 20px;
-    }
-}
-
+/*HOMEPAGE====================*/
 .card {
-    width: 300px;
-    height: 300px;
+    width: 280px;
+    height: 280px;
     background-color: var(--yellow);
-    min-width: 250px;
-    margin: 10px auto;
+    margin: 20px ;
 }
-
+.card:hover {
+    filter: drop-shadow(-20px 20px 4px rgba(0, 0, 0, 0.25));
+}
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -90,27 +84,46 @@
 .card-body hr {
     border: 1px solid black;
 }
-.card-title{
-    font-size: 24px;}
 
-
-.card-footer {
-    color: black;
+.card-title {
+    font-size: 24px;
 }
 
-a, a:hover {
-    text-decoration: none;
-    color: black;
-    cursor: pointer;
+iconify-icon{
+    font-size: 150px;
 }
-
 .icon-container {
-    height: 22vh;
+    height: 20vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0;
 }
+
+.card footer{
+    text-align: right;
+    marging-bottom:5px;
+    padding-right: 1.5rem;"
+}
+@media screen and (max-width: 576px) {
+    .card {
+        height: 250px;
+        width: 250px;
+    }
+
+    .card-title {
+        font-size: 21px;
+    }
+
+    .icon-container {
+        height: 18vh;
+    }
+
+    iconify-icon {
+        font-size: 100px;
+    }
+}
+
+/*HOMEPAGE====================END*/
 
 /*Sidebar*/
 .sidenav {
@@ -168,8 +181,6 @@ a, a:hover {
 
 
 /* kein plan was vo dem brucht wird und was ned ===================*/
-
-
 .close {
     right: 32px;
     top: 125px;
@@ -201,9 +212,7 @@ a, a:hover {
 
 
 /* UPLOAD PAGE ===================*/
-
 /*Form*/
-
 input:hover::placeholder,
 input:focus::placeholder {
     position: absolute;
@@ -242,9 +251,7 @@ input:focus::placeholder {
 }
 
 /*Form ------------------END*/
-
 /*Drag AND DROP*/
-
 .dropArea {
     cursor: pointer;
     border: 4px dashed var(--blue);
@@ -270,7 +277,6 @@ input:focus::placeholder {
 }
 
 /*Drag AND DROP -----------END*/
-
 /**
 Request
  */
@@ -302,23 +308,10 @@ Request
 }
 
 
-/**
-About
- */
-.about {
-    margin-bottom: 5px;
-    display: grid;
-    background-color: white;
-    padding-left: 20px;
-}
 
-.about button {
-    margin-top: 20px;
-}
+/* ABOUT PAGE ===================*/
 
+.tutorial-container{
 
-.page-wrap {
-    text-align: center;
-    overflow: auto;
 }
 

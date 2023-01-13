@@ -1,0 +1,21 @@
+/*Homepage*/
+@media screen and (min-width: 935px) {
+    .d-inline-flex {
+        justify-content: space-between;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 934px) {
+    .d-inline-flex {
+        justify-content: center;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    .d-flex {
+        margin-top: 20px;
+    }
+}
+
