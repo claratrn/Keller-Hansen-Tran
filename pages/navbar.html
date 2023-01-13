@@ -1,33 +1,48 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="../App.css">
     <title>Navbar</title>
-  </head>
-  <body>
-    <nav class="navbar navbar-default navbar-static-top">
-      <div class="container-fluid">
-          <div class="navbar-toggler-icon"><div class="bm-burger-bars"></div></div>
-        <div class="navbar-header">
-          <a class="navbar-brand" href="/homepage.html">Easystep Connect</a>
-        </div>
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-            <li><a href="anliegen.html">Dein Anliegen</a></li>
-            <li><a href="upload.html">Profil upload</a></li>
-            <li><a href="https://easystep.ch/">Easystep</a></li>
-            <li><a href="about.html">So geht's</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <div id="page-wrap">
-      <!-- Navbar content -->
+
+
+<body>
+<header>
+    <div id="header-container"></div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#header-container").load("header.html");
+        });
+    </script>
+</header>
+<div class="d-flex align-items-center justify-content-center" style="min-height: 80vh; background-color: darkblue">
+        <div class="d-inline-flex flex-wrap" style="background-color: pink">
+            <div class="mx-2col-*-3 mx-2" style="background-color: red">
+                <div class="card">
+                    <!-- card content -->
+                </div>
+            </div>
+            <div class="mx-2col-*-3 mx-2">
+                <div class="card">
+                    <!-- card content -->
+                </div>
+            </div>
+            <div class="mx-2col-*-3 mx-2">
+                <div class="card">
+                    <!-- card content -->
+                </div>
+            </div>
+            <div class="mx-2col-*-3 mx-2">
+                <div class="card">
+                </div>
+            </div>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  </body>
+</div>
+
+</div>
+
+</body>
 </html>

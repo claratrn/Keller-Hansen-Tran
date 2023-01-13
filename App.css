@@ -2,7 +2,7 @@
  * Variables
  */
 :root {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter','Roboto Light', sans-serif;
     --blue: #83D4F9;
     --yellow: #F9EC61;
     --light-blue: #C0E9FC;
@@ -54,44 +54,45 @@
 }
 
 /*Homepage*/
+@media screen and (min-width: 935px) {
+    .d-inline-flex {
+        justify-content: space-between;
+        gap: 20px;
+    }
+}
 
-.homepage {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-@media (max-width: 767px) {
-    .homepage{
-        margin: initial;
-        position: initial;
-        top: initial;
-        left: initial;
-        transform: initial;
-    }
-    .row{
-        margin-top: 3rem;
+@media screen and (max-width: 934px) {
+    .d-inline-flex {
+        justify-content: center;
     }
 }
-.my-card {
-    width: 400px;
-    height: 500px;
-    font-size: 120%;
+
+@media screen and (max-width: 576px) {
+    .d-flex {
+        margin-top: 20px;
+    }
 }
 
 .card {
-    width: 220px;
-    height: 220px;
+    width: 300px;
+    height: 300px;
     background-color: var(--yellow);
-    min-width: 220px;
+    min-width: 250px;
+    margin: 10px auto;
 }
 
-.card-title + hr {
-    color: black;
-    margin-top: 5px;
-    margin-bottom: 5px;
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
 }
+
+.card-body hr {
+    border: 1px solid black;
+}
+.card-title{
+    font-size: 24px;}
+
 
 .card-footer {
     color: black;
@@ -104,13 +105,11 @@ a, a:hover {
 }
 
 .icon-container {
+    height: 22vh;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.ml-6 {
-    margin-left: 3.125rem;
+    margin: 0;
 }
 
 /*Sidebar*/
