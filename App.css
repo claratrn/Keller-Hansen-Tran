@@ -81,7 +81,6 @@ a, a:hover {
     flex-wrap: wrap;
     align-content: center;
 }
-
 .card-body hr {
     border: 1px solid black;
 }
@@ -91,19 +90,25 @@ a, a:hover {
 }
 
 iconify-icon{
+    position: relative;
     font-size: 150px;
 }
 .icon-container {
-    height: 20vh;
+    position: relative;
+    min-height: 18vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .card footer{
+    position: relative;
     text-align: right;
     padding-right: 1.5rem;
+    margin-bottom: 3px;
+
 }
+/*mobile*/
 @media screen and (max-width: 576px) {
     .card {
         height: 250px;
@@ -113,7 +118,7 @@ iconify-icon{
         font-size: 21px;
     }
     .icon-container {
-        height: 15vh;
+        min-height: 15vh;
 
     }
     iconify-icon {
@@ -137,14 +142,13 @@ iconify-icon{
     }
 
     .icon-container {
-        height: 23vh;
+        min-height: 23vh;
     }
     iconify-icon {
         font-size: 170px;
     }
     .card footer{
         margin-bottom: 1rem;
-
     }
 
 }
