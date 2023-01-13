@@ -2,7 +2,7 @@
  * Variables
  */
 :root {
-    font-family: 'Nunito', sans-serif;
+    font-family: Verdana, sans-serif;
     --blue: #83D4F9;
     --yellow: #F9EC61;
     --light-blue: #C0E9FC;
@@ -34,6 +34,7 @@ p{
     border: 1px solid #000000;
     box-shadow: -10px 10px 4px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
+    font-weight: bold;
 }
 
 /*Heading*/
@@ -108,18 +109,20 @@ iconify-icon{
         height: 250px;
         width: 250px;
     }
-
     .card-title {
         font-size: 21px;
     }
-
     .icon-container {
-        height: 18vh;
-    }
+        height: 15vh;
 
+    }
     iconify-icon {
         font-size: 100px;
     }
+    .card footer{
+        margin-bottom: 3px;
+    }
+
 }
 /*for Extra large devices*/
 @media screen and (min-width: 1700px) {
@@ -224,14 +227,15 @@ iconify-icon{
 
 /* UPLOAD PAGE ===================*/
 /*Form*/
-input:hover::placeholder,
-input:focus::placeholder {
+.form-group input:hover::placeholder,
+.form-group input:focus::placeholder{
     position: absolute;
     bottom: -20px;
     left: 0;
 }
-.form-group input{
-    background: #EEEEEE;
+.form-group input
+{
+    background: var(--field-background);
     border: 1px solid #000000;
     border-radius: 5px;
 }
@@ -294,25 +298,26 @@ input:focus::placeholder {
 }
 
 /*Drag AND DROP -----------END*/
+
 /**
-Request
+-----------------------Request
  */
-.form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 20px;
+.anliegen{
+
 }
 
 .form label {
+    display: block;
     text-align: left;
-    margin-bottom: 8px;
 }
 
-.form input,
-.form textarea {
-    width: 50%; /* Makes the input and textarea fields take up half of the width of their parent container */
-    margin: 0 auto; /* Centers the input and textarea fields horizontally */
+.form input{
+    height: 40px;
+    font-size: 1rem;
+
+    background: var(--field-background);
+    border: 1px solid #000000;
+    border-radius: 5px;
 }
 
 .form h3 {
@@ -323,19 +328,27 @@ Request
 .form button {
     margin-top: 20px;
 }
-.request-area{
-    width: 799px;
-    height: 212px;
+.request-area,
+.form input{
     background: #EEEEEE;
     border: 1px solid #000000;
     box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
-    font-size: 2rem;
+    font-size: 1rem;
     padding: 1rem;
 }
-.request-area::placeholder{
-    font-size: 2rem;
+.request-area{
+    min-width: 799px;
+    width: auto;
+    height: 212px;
 }
+.request-area::placeholder{
+    font-size: 1rem;
+}
+.d-inline-block{
+    display: inline-block;
+}
+
 
 
 /* ABOUT PAGE ===================*/
