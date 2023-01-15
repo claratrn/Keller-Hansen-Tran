@@ -342,8 +342,9 @@ iconify-icon{
     padding: 1rem;
 }
 .request-area{
-    min-width: 799px;
-    width: auto;
+    width: 799px;
+    min-width: 399px;
+    /*width: auto;*/
     height: 212px;
 }
 .request-area::placeholder{
