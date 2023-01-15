@@ -57,9 +57,7 @@ p{
 .heading-1 {
     /*23.05px*/
     margin-left: 1.441rem;
-
 }
-
 
 a, a:hover {
     text-decoration: none;
@@ -179,7 +177,8 @@ iconify-icon{
 }
 
 .sidenav a:hover {
-    color: #818181;
+    color: var(--blue);
+    background: #333333;
 }
 
 .sidenav .closebtn {
