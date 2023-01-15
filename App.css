@@ -10,9 +10,8 @@
     --grey: #ADABAB;
 
 }
-
-p {
-    font-size: 24px;
+p{
+    font-size : 24px;
 }
 
 
@@ -67,7 +66,6 @@ a, a:hover {
     color: black;
     cursor: pointer;
 }
-
 /*HOMEPAGE====================*/
 .card {
     width: 280px;
@@ -75,17 +73,14 @@ a, a:hover {
     background-color: var(--yellow);
     margin: 20px;
 }
-
 .card:hover {
     filter: drop-shadow(-20px 20px 4px rgba(0, 0, 0, 0.25));
 }
-
 .container {
     display: flex;
     flex-wrap: wrap;
     align-content: center;
 }
-
 .card-body hr {
     border: 1px solid black;
 }
@@ -94,11 +89,10 @@ a, a:hover {
     font-size: 24px;
 }
 
-iconify-icon {
+iconify-icon{
     position: relative;
     font-size: 150px;
 }
-
 .icon-container {
     position: relative;
     min-height: 18vh;
@@ -107,40 +101,34 @@ iconify-icon {
     align-items: center;
 }
 
-.card footer {
+.card footer{
     position: relative;
     text-align: right;
     padding-right: 1.5rem;
     margin-bottom: 3px;
 
 }
-
 /*mobile*/
 @media screen and (max-width: 576px) {
     .card {
         height: 250px;
         width: 250px;
     }
-
     .card-title {
         font-size: 21px;
     }
-
     .icon-container {
         min-height: 15vh;
 
     }
-
     iconify-icon {
         font-size: 100px;
     }
-
-    .card footer {
+    .card footer{
         margin-bottom: 3px;
     }
 
 }
-
 /*for Extra large devices*/
 @media screen and (min-width: 1700px) {
     .card {
@@ -156,12 +144,10 @@ iconify-icon {
     .icon-container {
         min-height: 23vh;
     }
-
     iconify-icon {
         font-size: 170px;
     }
-
-    .card footer {
+    .card footer{
         margin-bottom: 1rem;
     }
 
@@ -211,7 +197,6 @@ iconify-icon {
     font-size: 50px;
 
 }
-
 @media screen and (max-height: 450px) {
     .sidenav {
         padding-top: 15px;
@@ -253,8 +238,8 @@ iconify-icon {
     bottom: -20px;
     left: 0;
 }
-
-.form-group input {
+.form-group input
+{
     background: var(--field-background);
     border: 1px solid #000000;
     border-radius: 5px;
@@ -328,7 +313,7 @@ iconify-icon {
     text-align: left;
 }
 
-.form input {
+.form input{
     height: 40px;
     font-size: 1rem;
     background: var(--field-background);
@@ -344,7 +329,6 @@ iconify-icon {
 .form button {
     margin-top: 20px;
 }
-
 .request-area,
 .form input {
     background: #EEEEEE;
