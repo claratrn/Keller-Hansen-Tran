@@ -10,8 +10,8 @@
     --grey: #ADABAB;
 }
 
-p {
-    font-size: 24px;
+p,li, .form label{
+    font-size: 20px;
 }
 
 
@@ -421,8 +421,14 @@ iconify-icon {
 }
 
 /* Profil PAGE ===================*/
-.skills {
-    margin-left: 60px;
+.skills{
+    margin-left: 45px;
+}
+.socials{
+    margin-right: 60px;
+}
+.profilList{
+    margin-left: 50px;
 }
 .skillContainer {
     border-radius: 5px;
@@ -441,6 +447,17 @@ iconify-icon {
     .skillContainer p{
         font-size: 17px;
     }
+}
+@media (min-width: 665px) {
+  .profil{
+      width: 100%;
+  }
+}
+
+.socials ul{
+    list-style-type:none;
+    padding-left:0;
+    font-size: 20px;
 }
 
 
