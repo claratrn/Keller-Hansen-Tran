@@ -9,6 +9,7 @@
     --field-background: #EEEEEE;
     --grey: #ADABAB;
 }
+
 p {
     font-size: 24px;
 }
@@ -39,7 +40,7 @@ p {
 /*Heading*/
 
 .col-12 h1,
-.heading-2{
+.heading-2 {
     font-size: 30px;
     line-height: 60px;
 }
@@ -49,10 +50,12 @@ p {
     cursor: pointer;
 }
 
-.heading-2 {
+.heading-2,
+.heading-5{
     /*50px*/
     margin-left: 3.125rem;
 }
+
 
 .heading-1 {
     /*23.05px*/
@@ -333,7 +336,7 @@ iconify-icon {
 }
 
 .form h3 {
-    color: #83D4F9;
+    color: var(--blue);
     margin: 5px 455px 0px 0px;
 }
 
@@ -343,7 +346,7 @@ iconify-icon {
 
 .request-area,
 .form input {
-    background: #EEEEEE;
+    background: var(--field-background);
     border: 1px solid #000000;
     box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
@@ -374,7 +377,8 @@ iconify-icon {
 
 /* CHAT PAGE ===================*/
 
-.message-container {
+.message-container,
+.skillContainer {
     display: flex;
     position: relative;
     border-radius: 5px;
@@ -385,9 +389,7 @@ iconify-icon {
     max-width: 60%;
 
 }
-/*#chat1,#chat2{*/
-/*    font-size: 10px;*/
-/*}*/
+
 #chat1 {
     background-color: rgba(131, 212, 249, 0.51);
 }
@@ -407,15 +409,39 @@ iconify-icon {
     p {
         font-size: 1.2rem;
     }
+
     .heading-2 {
         font-size: 2rem;
     }
-    .message-container{
+
+    .message-container {
         margin-right: 1em;
         margin-left: 1em;
     }
 }
 
+/* Profil PAGE ===================*/
+.skills {
+    margin-left: 60px;
+}
+.skillContainer {
+    border-radius: 5px;
+    padding: 0 5px;
+    height: 45px;
+    width: auto;
+    background-color: var(--field-background);
+    border: 1px solid #000000;
+    margin: 0 5px 5px;
+}
+.skillContainer p{
+    font-size: 18px;
+    line-height: 45px;
+}
+@media (max-width: 665px) {
+    .skillContainer p{
+        font-size: 17px;
+    }
+}
 
 
 
