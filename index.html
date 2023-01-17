@@ -1,23 +1,111 @@
+<!--#include file="header.html" -->
+
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="App.css">
-    <title>App</title>
-  </head>
-  <body>
-    <div class="App">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-sm-12">
-            <router-outlet></router-outlet>
-          </div>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.4/css/mdb.min.css"
+        integrity="sha256-z3cJWQw5QZvjgIc35+nh5mKWvbFpY/YkSUbCvjsDdw=" crossorigin="anonymous"/>
+  <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+
+  <link rel="stylesheet" href="App.css">
+  <link rel="stylesheet" href="Homepage.css">
+  <title>Homepage</title>
+</head>
+
+<body>
+<header>
+  <div class="container-fluid align-items-center" style="background-color: var(--blue)">
+    <div class="row">
+      <div class="col-12 d-flex ">
+        <!--Sidebar Navigation-->
+        <div id="mySidenav" class="sidenav sidebar">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="pages/anliegen.html">Dein Anliegen</a>
+          <a href="pages/chat.html">Chat</a>
+          <a href="pages/upload.html">Profil hochladen</a>
+          <a href="pages/about.html">About</a>
+          <a href="https://easystep.ch/">Easystep</a>
+          <a href="homepage.html">Home</a>
         </div>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        <script>
+          function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+          }
+
+          function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+          }
+        </script>
+        <!--/. Sidebar navigation -->
+        <a href="homepage.html"><h1 class="heading-1">Easystep Connect</h1></a>
+
       </div>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  </body>
+  </div>
+  </div>
+</header>
+<main>
+  <div class="d-flex align-items-center justify-content-center" style="min-height: 80vh">
+    <div class="d-inline-flex flex-wrap">
+      <div class="mx-2col-*-3 mx-2">
+        <a href="pages/anliegen.html">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Dein Anliegen</h5>
+              <hr class="my-3">
+              <div class="icon-container">
+                <iconify-icon icon="iconoir:question-mark-circle"></iconify-icon>
+              </div>
+            </div>
+            <footer >
+              <i class="fas fa-angle-right fa-2x"></i>
+            </footer>
+          </div>
+        </a>
+      </div>
+      <div class="mx-2col-*-3 mx-2">
+        <a href="pages/upload.html">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Profil hochladen</h5>
+              <hr class="my-3">
+              <div class="icon-container">
+                <iconify-icon icon="ion:cloud-upload-outline"></iconify-icon>
+              </div>
+            </div>
+            <footer >
+              <i class="fas fa-angle-right fa-2x"></i>
+            </footer>
+          </div>
+        </a>
+      </div>
+      <div class="mx-2col-*-3 mx-2">
+        <a href="https://easystep.ch/">
+          <div class="card" style="background-color: var(--blue)">
+            <div class="card-body">
+              <h5 class="card-title">Easystep</h5>
+              <hr class="my-3">
+              <div class="icon-container">
+              </div>
+            </div>
+            <footer>
+              <i class="fas fa-angle-right fa-2x"></i>
+            </footer>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</main>
+
+</body>
+
 </html>
